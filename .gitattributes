@@ -1,2 +1,40 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+abstract  class Cal
+{
+	float a=13,b=4,c;
+	abstract void add();
+	void sub()
+	{
+		c=a-b;
+			System.out.println(+c);
+
+	}
+	abstract void multiply();
+	void divide()
+	{
+		c=a/b;
+		System.out.println(+c);
+	}
+}
+public class AbstractionDemo extends Cal
+{
+	void add()
+	{
+	c=a+b;
+	System.out.println(+c);
+}
+    void multiply()
+    {
+    	c=a*b;
+    	System.out.println(+c);
+    	}
+public static void main(String args[])
+{
+	AbstractionDemo obj= new AbstractionDemo;
+	obj.add();
+	obj.multiply();
+	obj.sub();
+	obj.divide();
+	}
+}
